@@ -72,7 +72,7 @@ const user = userModel.user;
 //Implement a User Authentication Strategy
 passport.use(user.createStrategy());
 
-// //Encrypt and dcrypt user info
+//Encrypt and dcrypt user info
 passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
