@@ -1,0 +1,46 @@
+<%- include('./template/header') %> <%- include('./template/navigationBar') %>
+
+<main>
+  <h1 class="header-one">Contact</h1>
+  <div class="center">
+    <div id="content">
+      <form onsubmit="takeValue()">
+        <div id="form">
+          <fieldset>
+            <label for="name">Name: </label>
+            <input id="name" type="text" />
+            <br />
+            <br />
+            <label for="email">Email address: </label>
+            <input id="email" type="email" required />
+            <br />
+            <br />
+            <label for="message">Message: </label>
+            <input id="message" type="text" />
+            <br />
+            <br />
+            <button style="font-size: large" class="button">Send</button>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function takeValue() {
+      var fName = document.getElementById("name").value;
+
+      var email = document.getElementById("email").value;
+
+      document.write(
+        "Hi, " +
+          fName +
+          " thanks for the message, if needed I will reach to you at " +
+          email +
+          "."
+      );
+    }
+  </script>
+</main>
+
+<%- include('./template/footer') %>

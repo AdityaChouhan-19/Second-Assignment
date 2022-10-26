@@ -1,0 +1,30 @@
+<%- include('../template/header') %> 
+<%- include('../template/navigationBar') %>
+
+<main class="center">
+  <table class="content-table table">
+    <tr>
+      <th>Name</th>
+      <th>Contact Number</th>
+      <th>Email</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+
+    <% for(let count = 0; count < ContactList.length; count++) {%>
+    <tr>
+      <td><%= ContactList[count].contactname %></td>
+      <td><%= ContactList[count].contactnumber %></td>
+      <td><%= ContactList[count].contactemail%></td>
+      <td><a href="/contactlist/update/<%= ContactList[count]._id %> ">Update</a></td>
+      <td>
+        <a href="/contactlist/delete/<%= ContactList[count]._id %> " class="delete"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% } %>
+  </table>
+</main>
+
+<%- include('../template/footer') %>

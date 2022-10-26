@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    background-color: #28282B;
+    color: #edf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    padding-bottom: 78.5px;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: transparent;
+}
+
+.logo {
+    background-image: url(../img/titan_x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 200px;
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links a {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #FF2800;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    padding: 15px 5% 30px 5%;
+    color: #edf0f1;
+    font-size: x-large;
+}
+
+.center {
+    max-width: 900px;
+    margin: auto;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-services {
+    text-decoration: none;
+}
+
+.span-services{
+    color: #90E0EF;
+}
+
+.left {
+    text-align: left;
+}
+
+.header-one {
+    font-size: xx-large;
+}
+
+.about-ul {
+    list-style-type: disc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5% 30px 5%;
+    color: #edf0f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+footer ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+#instagram-logo {
+    background-image: url(../img/instagram.png);
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#linkedin-logo {
+    background-image: url(../img/linkedin.png);
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Styling input form */
+
+#content{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#form{
+    text-align: center;
+    font-size: 40px;
+    width: 900px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #edf0f1;
+}
+
+fieldset{
+    border: transparent;
+}
+
+label{
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+}
+
+input{
+    font-size: 25px;
+    background-color: #ED944D;
+    text-align: center;
+    border-radius: 30px;
+}
+
+button {
+    padding: 13px 35px;
+    background-color: #ED944D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #ff2800;
+}
+
+.table{
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ED944D;
+}
+
+.content-table thead tr {
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th{
+    color: #ED944D;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ED944D;
+}
+
+.content-table a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.content-table a:hover {
+    color: #FF2800;
+}
+
+.padding{
+    padding: 10px 0px;
+}
+
+.space{
+    justify-content:space-around;
+    display: flex;
+}
+
+.content-form {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ED944D;
+    padding: 20px;
+}

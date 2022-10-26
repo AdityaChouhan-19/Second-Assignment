@@ -1,0 +1,52 @@
+<%- include('../template/header') %> <%- include('../template/navigationBar') %>
+
+<main class="center">
+  <form class="form" method="POST">
+    <div class="padding">
+      <label for="contactNameTextField">Name: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="contactNameTextField"
+        placeholder="Enter the Book Title"
+        name="name"
+        value="<%= contact.contactname %>"
+        required
+      />
+    </div>
+
+    <div class="padding">
+      <label for="contactNumberTextField">Number: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="contactNumberTextField"
+        placeholder="Update the contact name"
+        name="contactname"
+        value="<%= contact.contactnumber %>"
+        required
+      />
+    </div>
+
+    <div class="padding">
+      <label for="contactEmailTextField">Email: </label>
+      <input
+        type="text"
+        id="contactEmailTextField"
+        value="<%= contact.contactemail %>"
+        required
+      />
+    </div>
+
+    <br />
+    <div class="space">
+      <button type="submit">Submit</button>
+
+      <a href="/contactlist">
+        <button>Cancel</button>
+      </a>
+    </div>
+  </form>
+</main>
+
+<%- include('../template/footer') %>

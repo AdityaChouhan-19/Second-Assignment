@@ -1,0 +1,49 @@
+<%- include('../template/header') %> <%- include('../template/navigationBar') %>
+
+<main>
+  <% if(messages.length > 0) {%>
+  <div><%= messages %></div>
+  <% } %>
+  <div class="center">
+    <div class="content-form">
+      <h1>Please Login</h1>
+      <br />
+      <form method="POST" autocomplete="off">
+        <fieldset class="padding">
+          <label for="username">Username: </label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            id="username"
+            required
+            autofocus
+          />
+        </fieldset>
+
+        <fieldset class="padding">
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            id="password"
+            required
+          />
+        </fieldset>
+        <br />
+        <a href="/register">Register Here</a>
+        <br />
+        <br />
+        <div class="space">
+          <input id="login" type="submit" value="..Login.." />
+          <a href="/">
+            <input id="cancel" type="button" value="..Cancel.." />
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%- include('../template/footer') %>
